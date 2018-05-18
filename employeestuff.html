@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Employees</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+              <h1 class="display-3">Employee Shizz</h1>
+              <p class="lead">Employee blah blah</p>
+              <hr class="my-2">
+          </div>
+      </div>
+
+      <table class="table">
+          <thead>
+              <tr>
+                  <th>Employee Name</th>
+                  <th>Role</th>
+                  <th>Start Date</th>
+                  <th>Month Worked</th>
+                  <th>Monthly Rate</th>                  
+                  <th>Total Billed</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr id="appendRow">
+                  <td scope="row">col</td>
+                  <td>1</td>
+                  <td>this is a column in a row</td>
+                  <td>this is a column in a row</td>
+                  <td>this is a column in a row</td>
+                  <td>this is a column in a row</td>
+              </tr>
+
+          </tbody>
+      </table>
+      <div id="listy-list"></div>
+
+      <div class="form-group">
+        <label for="">Add an Employee</label>
+        <input type="text" class="form-control" name="" id="employee-name" aria-describedby="helpId" placeholder="name">
+        <input type="text" class="form-control" name="" id="role" aria-describedby="helpId" placeholder="role">
+        <input type="text" class="form-control" name="" id="start-date" aria-describedby="helpId" placeholder="start date">
+        <input type="text" class="form-control" name="" id="months-worked" aria-describedby="helpId" placeholder="months worked">
+        <input type="text" class="form-control" name="" id="monthly-rate" aria-describedby="helpId" placeholder="monthly rate">
+        <input type="text" class="form-control" name="" id="total-billed" aria-describedby="helpId" placeholder="total billed"> 
+        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+
+        <small id="helpId" class="form-text text-muted">Help text</small>
+      </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+    <script src="employeestuff.js"></script>
+
+  </body>
+</html>
